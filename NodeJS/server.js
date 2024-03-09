@@ -27,9 +27,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/messages",messageRotes);
 app.use("/api/users",userRotes);
 
-// app.get("/",(req,res)=>{
-//     res.send("hello world");
-// });
+
 app.use(express.static(path.join(__dirname, "/ReactJS/dist")));
 
 app.get("*", (req, res) => {
